@@ -22,5 +22,14 @@ console.log(getHumanChoice());
 const playRound = (humanChoice, computerChoice) => {
     if (humanChoice === computerChoice) {
         return (`You tied! You both picked ${humanChoice}`);
+    } else if ((humanChoice === 'scissors') && (computerChoice === 'rock')) {
+        computerScore++;
+        return ('You lose! Rock crushes Scissors');
+    } else if ((humanChoice === 'scissors') && (computerChoice === 'paper')) {
+        humanScore++;
+        return ('You win! Scissors cut Paper');
+    } else if ((humanChoice === 'rock') && (computerChoice === 'paper')) {
+        computerScore++;
+        return ('You lose! Paper covers Rock');
     }
 }

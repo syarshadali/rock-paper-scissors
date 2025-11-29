@@ -10,3 +10,8 @@ const getComputerChoice = () => {
     return choice1;
 }
 
+const getHumanChoice = () => {
+    let choice2 = prompt('choose what to throw:', 'Rock, Paper, Scissors').toLowerCase();
+    return choice2;
+}
+console.log(getHumanChoice());

@@ -18,3 +18,9 @@ const getHumanChoice = () => {
     return choice2;
 }
 console.log(getHumanChoice());
+
+const playRound = (humanChoice, computerChoice) => {
+    if (humanChoice === computerChoice) {
+        return (`You tied! You both picked ${humanChoice}`);
+    }
+}

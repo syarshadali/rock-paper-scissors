@@ -17,7 +17,9 @@ const getHumanChoice = () => {
     let choice2 = prompt('choose what to throw:', 'Rock, Paper, Scissors').toLowerCase();
     return choice2;
 }
+
 console.log(getHumanChoice());
+
 
 const playRound = (humanChoice, computerChoice) => {
     if (humanChoice === computerChoice) {
@@ -31,5 +33,16 @@ const playRound = (humanChoice, computerChoice) => {
     } else if ((humanChoice === 'rock') && (computerChoice === 'paper')) {
         computerScore++;
         return ('You lose! Paper covers Rock');
+    } else if ((humanChoice === 'rock') && (computerChoice === 'scissors')) {
+        humanScore++;
+        return ('You win! Rock crushes scissors');
+    } else if ((humanChoice === 'paper') && (computerChoice === 'scissors')) {
+        computerScore++;
+        return ('You lose! Scissors cut Paper');
+    } else if ((humanChoice === 'paper') && (computerChoice === 'rock')) {
+        humanScore++;
+        return ('You win! Paper covers Rock');
     }
 }
+
+console.log(playRound());

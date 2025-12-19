@@ -36,6 +36,18 @@ const playRound = () => {
     if (humanChoice === computerChoice) {
         // Draw Round
         drawRound();
+    } else {
+        let humanWin = true;
+        if (humanChoice === "rock") {
+            // scissors, paper
+            humanWin = computerChoice === "paper" ? false : true;
+        } else if (humanChoice === "paper") {
+            // rock, scissors
+            humanWin = computerChoice === "scissors" ? false : true;
+        } else {
+            // rock, paper
+            humanWin = computerChoice === "rock" ? false : true;
+        }
     }
 }
 

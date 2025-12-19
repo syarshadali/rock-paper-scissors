@@ -21,7 +21,12 @@ const getHumanChoice = () => {
 
 
 const playRound = () => {
-    
+    // Generate computer choice
+    const computerChoice = getComputerChoice();
+    console.log("Computer Choice = ", computerChoice);
+    // Generate human choice
+    const humanChoice = getHumanChoice();
+    console.log("Human Choice = ", humanChoice);    
 }
 
 

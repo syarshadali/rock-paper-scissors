@@ -66,5 +66,10 @@ const playRound = () => {
 
 
 const playGame = () => {
-    
+    playRound();
+    playRound();
+    playRound();
+    playRound();
+    playRound();
 }
+

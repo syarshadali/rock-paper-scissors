@@ -25,6 +25,17 @@ const drawRound = () => {
 }
 
 
+const showWinner = (humanWin, humanChoice, computerChoice) => {
+    if (humanWin) {
+        humanScore++;
+        console.log(`You win! your ${humanChoice} beats ${computerChoice}`);
+    } else {
+        computerScore++;
+        console.log(`You lose! ${computerChoice} beats your ${humanChoice}`);
+    }
+};
+
+
 const playRound = () => {
     // Generate computer choice
     const computerChoice = getComputerChoice();
@@ -48,6 +59,8 @@ const playRound = () => {
             // rock, paper
             humanWin = computerChoice === "rock" ? false : true;
         }
+        showWinner(humanWin, humanChoice, computerChoice);
+        console.log("You: "+humanScore+" Comp: "+computerScore);
     }
 }
 

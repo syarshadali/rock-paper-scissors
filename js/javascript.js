@@ -20,13 +20,23 @@ const getHumanChoice = () => {
 }
 
 
+const drawRound = () => {
+    console.log("Round was draw. Play again.");
+}
+
+
 const playRound = () => {
     // Generate computer choice
     const computerChoice = getComputerChoice();
     console.log("Computer Choice = ", computerChoice);
     // Generate human choice
     const humanChoice = getHumanChoice();
-    console.log("Human Choice = ", humanChoice);    
+    console.log("Human Choice = ", humanChoice);
+    
+    if (humanChoice === computerChoice) {
+        // Draw Round
+        drawRound();
+    }
 }
 
 

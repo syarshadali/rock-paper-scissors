@@ -71,5 +71,18 @@ const playGame = () => {
     playRound();
     playRound();
     playRound();
+
+    if (humanScore > computerScore) {
+        console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
+        console.log("CONGRATULATIONS! YOU WIN!");
+    } else if (humanScore < computerScore) {
+        console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
+        console.log("OH GOD! YOU LOSE!");
+    } else {
+        console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
+        console.log("GAME WAS DRAW. PLAY AGAIN!");
+    }
 }
+
+playGame();
 

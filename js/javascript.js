@@ -13,9 +13,11 @@
 
 
 
-let humanScore = 0;
+let humanScore = 0; // variables to keep track of scores
 let computerScore = 0;
 
+
+// Computer Choice
 const getComputerChoice = () => {
     let choice1 = Math.floor(Math.random() * 3);
     if (choice1 === 0) {
@@ -29,17 +31,20 @@ const getComputerChoice = () => {
 }
 
 
+// Human Choice
 const getHumanChoice = () => {
     let choice2 = prompt('choose what to throw:').toLowerCase();
     return choice2;
 }
 
 
+// To show draw
 const drawRound = () => {
     console.log("Round was draw.");
 }
 
 
+// To show winner and loser
 const showWinner = (humanWin, humanChoice, computerChoice) => {
     if (humanWin) {
         humanScore++;
@@ -51,6 +56,7 @@ const showWinner = (humanWin, humanChoice, computerChoice) => {
 };
 
 
+// Function for the logic of the round
 const playRound = () => {
     // Generate computer choice
     const computerChoice = getComputerChoice();
@@ -80,6 +86,7 @@ const playRound = () => {
 }
 
 
+// Function to play the entire game
 const playGame = () => {
     playRound();
     playRound();
@@ -89,15 +96,22 @@ const playGame = () => {
 
     if (humanScore > computerScore) {
         console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
+
+        // To show winner of the game
         console.log("CONGRATULATIONS! YOU WIN!");
     } else if (humanScore < computerScore) {
         console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
+
+        // To show loser of the game
         console.log("OH GOD! YOU LOSE!");
     } else {
         console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
+
+        // Game Draw
         console.log("GAME WAS DRAW. PLAY AGAIN!");
     }
 }
+
 
 playGame();
 

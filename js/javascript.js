@@ -98,12 +98,12 @@ const playGame = () => {
         console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
 
         // To show winner of the game
-        console.log("CONGRATULATIONS! YOU WIN!");
+        console.log("CONGRATULATIONS! YOU WIN THE GAME.");
     } else if (humanScore < computerScore) {
         console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
 
         // To show loser of the game
-        console.log("OH GOD! YOU LOSE!");
+        console.log("OH GOD! YOU LOSE THE GAME.");
     } else {
         console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
 

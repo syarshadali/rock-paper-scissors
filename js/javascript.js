@@ -33,7 +33,7 @@ const getComputerChoice = () => {
 
 // Human Choice
 const getHumanChoice = () => {
-    let choice2 = prompt('choose what to throw:').toLowerCase();
+    let choice2 = prompt('Enter rock or paper or scissors:').toLowerCase();
     return choice2;
 }
 

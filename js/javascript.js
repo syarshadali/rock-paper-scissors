@@ -17,7 +17,7 @@ let humanScore = 0; // variables to keep track of scores
 let computerScore = 0;
 
 
-// Computer Choice
+// Function for getting computer input
 const getComputerChoice = () => {
     let compChoice = Math.floor(Math.random() * 3);
     if (compChoice === 0) {
@@ -31,20 +31,20 @@ const getComputerChoice = () => {
 }
 
 
-// Human Choice
+// Function for getting user input
 const getHumanChoice = () => {
     let humChoice = prompt('Enter rock or paper or scissors:').toLowerCase();
     return humChoice;
 }
 
 
-// To show draw
+// Function to display round was draw
 const drawRound = () => {
     console.log("Round was draw.");
 }
 
 
-// To show winner and loser
+// Function to display winner and loser of the round
 const showWinner = (humanWin, humanChoice, computerChoice) => {
     if (humanWin) {
         humanScore++;
@@ -86,7 +86,7 @@ const playRound = () => {
 }
 
 
-// Function to play the entire game
+// Function to run playRound function 5 times
 const playGame = () => {
     playRound();
     playRound();

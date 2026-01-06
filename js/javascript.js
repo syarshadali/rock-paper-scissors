@@ -19,22 +19,22 @@ let computerScore = 0;
 
 // Computer Choice
 const getComputerChoice = () => {
-    let choice1 = Math.floor(Math.random() * 3);
-    if (choice1 === 0) {
-        choice1 = "rock";
-    } else if (choice1 === 1) {
-        choice1 = "paper";
+    let compChoice = Math.floor(Math.random() * 3);
+    if (compChoice === 0) {
+        compChoice = "rock";
+    } else if (compChoice === 1) {
+        compChoice = "paper";
     } else {
-        choice1 = "scissors";
+        compChoice = "scissors";
     }
-    return choice1;
+    return compChoice;
 }
 
 
 // Human Choice
 const getHumanChoice = () => {
-    let choice2 = prompt('Enter rock or paper or scissors:').toLowerCase();
-    return choice2;
+    let humChoice = prompt('Enter rock or paper or scissors:').toLowerCase();
+    return humChoice;
 }
 
 

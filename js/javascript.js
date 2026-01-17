@@ -88,12 +88,10 @@ const playRound = () => {
 
 // Function to run playRound function 5 times
 const playGame = () => {
-    playRound();
-    playRound();
-    playRound();
-    playRound();
-    playRound();
-
+    for (let i = 1; i < 6; i++) {
+        playRound();
+    }
+       
     if (humanScore > computerScore) {
         console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
 

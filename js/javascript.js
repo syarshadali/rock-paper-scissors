@@ -13,6 +13,7 @@
 
 
 
+let round = 0; // variable to keep track of rounds
 let humanScore = 0; // variables to keep track of scores
 let computerScore = 0;
 
@@ -40,7 +41,8 @@ const getHumanChoice = () => {
 
 // Function to display round was draw
 const drawRound = () => {
-    console.log("Round was draw.");
+    round++;
+    console.log("Round " + round + ": " + "Round was draw.");
 }
 
 
@@ -81,7 +83,8 @@ const playRound = () => {
             humanWin = computerChoice === "rock" ? false : true;
         }
         showWinner(humanWin, humanChoice, computerChoice);
-        console.log("You: "+humanScore+" Comp: "+computerScore);
+        round++;
+        console.log("Round " + round + ": " + "You: " + humanScore + " Comp: " + computerScore);
     }
 }
 

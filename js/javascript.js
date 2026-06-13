@@ -1,18 +1,3 @@
-// PSEUDOCODE:
-// 1. Generate a random string from a set of three strings(rock, paper, scissors) through computer.
-//    1a. Assign value randomly from 0 to 2. If 0 then rock, if 1 then paper, if 2 select scissors.
-// 2. Make user enter one of the above three choices and return it, assuming user will always enter correct choice.
-// 3. Intialize two counter variables that keep track of human and computer scores and set their values to zero.
-// 4. Write a single round.
-//    4a. Take human and computer choices as arguments.
-//    4b. Make human choice parameter case-insensitive.
-//    4c. If the round is draw, log message to the console.
-//    4d. Check who is the winner, log message to the console.
-//    4e. Increment human and computer scores based on the winner.
-// 5. Call five rounds of the game. Log message to the console for the winner and the draw.
-
-
-
 let round = 0; // variable to keep track of rounds
 let humanScore = 0; // variables to keep track of scores
 let computerScore = 0;

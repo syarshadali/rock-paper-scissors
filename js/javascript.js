@@ -17,13 +17,6 @@ const getComputerChoice = () => {
 }
 
 
-// Function for getting user input
-const getHumanChoice = () => {
-    let humChoice = prompt('Enter rock or paper or scissors:').toLowerCase();
-    return humChoice;
-}
-
-
 // Function to display round was draw
 const drawRound = () => {
     round++;

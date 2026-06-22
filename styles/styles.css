@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #af54d9;
+    color: #fff;
+    height: 4rem;
+    line-height: 4rem;
+}

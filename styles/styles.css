@@ -1,7 +1,17 @@
+/* General Styles */
+
+
 * {
     margin: 0;
     padding: 0;
     text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
 }
 
 h1 {

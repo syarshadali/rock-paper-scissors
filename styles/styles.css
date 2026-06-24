@@ -28,6 +28,7 @@ h1 {
     gap: 7.8rem;
     font-size: 1.5rem;
     margin-top: 1.5rem;
+    font-weight: bold;
 }
 
 
@@ -46,8 +47,8 @@ img {
 
 
 .choice {
-    width: 160px;
-    height: 160px;
+    width: 165px;
+    height: 165px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -84,4 +85,23 @@ img {
 .msg-container {
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+#msg {
+    background-color: #af54d9;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#message {
+    background-color: #af54d9;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
 }

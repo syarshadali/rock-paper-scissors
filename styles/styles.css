@@ -68,6 +68,10 @@ img {
     margin-top: 0.2rem;
 }
 
+
+/* Score Board Specific Styles */
+
+
 .score-board {
     display: flex;
     justify-content: center;
@@ -81,6 +85,10 @@ img {
 #comp-score {
     font-size: 4rem;
 }
+
+
+/* Message Containers Specicic Styles */
+
 
 .msg-container {
     margin-top: 3rem;

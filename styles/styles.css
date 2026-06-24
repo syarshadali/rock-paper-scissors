@@ -75,3 +75,13 @@ img {
     margin-top: 1.3rem;
     gap: 5rem;
 }
+
+#human-score,
+#comp-score {
+    font-size: 4rem;
+}
+
+.msg-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}

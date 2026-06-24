@@ -30,12 +30,20 @@ h1 {
     margin-top: 1.5rem;
 }
 
+
+/* Image Specific Styles */
+
+
 img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
+
+
+/* Choice div Specific Styles */
+
 
 .choice {
     width: 160px;
@@ -57,4 +65,13 @@ img {
     align-items: center;
     gap: 2rem;
     margin-top: 0.2rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 1.3rem;
+    gap: 5rem;
 }

@@ -65,30 +65,5 @@ const playRound = () => {
 }
 
 
-// Function to run playRound function 5 times
-const playGame = () => {
-    for (let i = 1; i < 6; i++) {
-        playRound();
-    }
-       
-    if (humanScore > computerScore) {
-        console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
 
-        // To show winner of the game
-        console.log("CONGRATULATIONS! YOU WIN THE GAME.");
-    } else if (humanScore < computerScore) {
-        console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
-
-        // To show loser of the game
-        console.log("OH GOD! YOU LOSE THE GAME.");
-    } else {
-        console.log("Final Score: "+" You: "+humanScore+" Comp: "+computerScore);
-
-        // Game Draw
-        console.log("GAME WAS DRAW. PLAY AGAIN!");
-    }
-}
-
-
-playGame();
 

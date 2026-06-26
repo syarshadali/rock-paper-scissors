@@ -41,13 +41,13 @@ const showWinner = (humanWin, humanChoice, computerChoice) => {
 
 
 // Function for the logic of the round
-const playRound = () => {
+
+const playRound = (humanChoice) => {
+    console.log("Human Choice = ", humanChoice);
     // Generate computer choice
     const computerChoice = getComputerChoice();
     console.log("Computer Choice = ", computerChoice);
-    // Generate human choice
-    const humanChoice = getHumanChoice();
-    console.log("Human Choice = ", humanChoice);
+
     
     if (humanChoice === computerChoice) {
         // Draw Round
@@ -65,7 +65,7 @@ const playRound = () => {
             humanWin = computerChoice === "rock" ? false : true;
         }
         showWinner(humanWin, humanChoice, computerChoice);
-        console.log("Round " + round + ": " + "You: " + humanScore + " Comp: " + computerScore);
+        
     }
 }
 
@@ -75,7 +75,6 @@ const playRound = () => {
 choices.forEach((choice) => {
     choice.addEventListener("click", () => {
         const humanChoice = choice.getAttribute("id");
-        console.log("choice was clicked", humanChoice);
         playRound(humanChoice);
     });
 });

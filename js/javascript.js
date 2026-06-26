@@ -6,9 +6,17 @@ let computerScore = 0;
 /* Declare variables to access elements in javascript */
 
 const choices = document.querySelectorAll(".choice");
+const msg = document.querySelector("#msg");
+
+const humanScorePara = document.querySelector("#human-score");
+const computerScorePara = document.querySelector("#comp-score");
+
+const message = document.querySelector("#message");
+
 
 
 // Function for getting computer input
+
 const getComputerChoice = () => {
     let compChoice = Math.floor(Math.random() * 3);
     if (compChoice === 0) {
@@ -23,6 +31,7 @@ const getComputerChoice = () => {
 
 
 // Function to display round was draw
+
 const drawRound = () => {
     console.log("Round " + round + ": " + "Round was draw.");
 }

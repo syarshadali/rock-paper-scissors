@@ -3,6 +3,11 @@ let humanScore = 0; // variables to keep track of scores
 let computerScore = 0;
 
 
+/* Declare variables to access elements in javascript */
+
+const choices = document.querySelectorAll(".choice");
+
+
 // Function for getting computer input
 const getComputerChoice = () => {
     let compChoice = Math.floor(Math.random() * 3);

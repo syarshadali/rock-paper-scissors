@@ -70,5 +70,12 @@ const playRound = () => {
 }
 
 
+/* Attach an event listener to each choice which tracks the click event */
 
-
+choices.forEach((choice) => {
+    choice.addEventListener("click", () => {
+        const humanChoice = choice.getAttribute("id");
+        console.log("choice was clicked", humanChoice);
+        playRound(humanChoice);
+    });
+});

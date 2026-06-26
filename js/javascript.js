@@ -33,7 +33,8 @@ const getComputerChoice = () => {
 // Function to display round was draw
 
 const drawRound = () => {
-    console.log("Round " + round + ": " + "Round was draw.");
+    msg.innerText = "Round was draw!";
+    msg.style.backgroundColor = "#af54d9";
 }
 
 

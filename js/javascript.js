@@ -52,7 +52,25 @@ const showWinner = (humanWin, humanChoice, computerChoice) => {
         msg.innerText = `You lose! ${computerChoice} beats your ${humanChoice}`;
         msg.style.backgroundColor = "#ff00009e";
     }
+
+    checkGameWinner();
 };
+
+
+/* Function to declare winner or loser of the game */
+
+function checkGameWinner() {
+    if (humanScore === 5) {
+        message.innerText = "CONGRATULATIONS! YOU WIN THE GAME";
+        message.style.backgroundColor = "#acd22d";
+    } else if (computerScore === 5) {
+        message.innerText = "OH GOD! YOU LOSE THE GAME";
+        message.style.backgroundColor = "#ff00009e";
+    } else if (humanScore === computerScore) {
+        message.innerText = "GAME WAS DRAW. PLAY AGAIN!";
+        message.style.backgroundColor = "#af54d9";
+    }
+}
 
 
 // Function for the logic of the round

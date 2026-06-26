@@ -39,13 +39,18 @@ const drawRound = () => {
 
 
 // Function to display winner and loser of the round
+
 const showWinner = (humanWin, humanChoice, computerChoice) => {
     if (humanWin) {
         humanScore++;
-        console.log(`You win! your ${humanChoice} beats ${computerChoice}`);
+        humanScorePara.innerText = humanScore;
+        msg.innerText = `You win! your ${humanChoice} beats ${computerChoice}`;
+        msg.style.backgroundColor = "#acd22d";
     } else {
         computerScore++;
-        console.log(`You lose! ${computerChoice} beats your ${humanChoice}`);
+        computerScorePara.innerText = computerScore;
+        msg.innerText = `You lose! ${computerChoice} beats your ${humanChoice}`;
+        msg.style.backgroundColor = "#ff00009e";
     }
 };
 

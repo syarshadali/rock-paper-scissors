@@ -19,6 +19,7 @@ h1 {
     color: #fff;
     height: 4rem;
     line-height: 4rem;
+    text-shadow: -.3em -.3em silver;
 }
 
 .heading {

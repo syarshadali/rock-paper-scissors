@@ -114,9 +114,11 @@ function checkGameWinner() {
     if (humanScore === 5) {
         message.innerText = "CONGRATULATIONS! YOU WIN THE GAME";
         message.style.backgroundColor = "#acd22d";
+        endGame();
     } else if (computerScore === 5) {
         message.innerText = "OH GOD! YOU LOSE THE GAME";
         message.style.backgroundColor = "#ff00009e";
+        endGame();
     } else if (humanScore === computerScore) {
         message.innerText = "GAME WAS DRAW!";
         message.style.backgroundColor = "#af54d9";

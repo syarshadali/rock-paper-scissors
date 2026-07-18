@@ -70,13 +70,21 @@ const playRound = (humanChoice) => {
 }
 
 
-/* Attach an event listener to each choice which tracks the click event */
+// Attach an event listener to each choice which tracks the click event
 
 choices.forEach((choice) => {
     choice.addEventListener("click", () => {
         const humanChoice = choice.getAttribute("id");
         playRound(humanChoice);
     });
+});
+
+
+// Attach an event listener to Reset Button to track the click event
+
+
+resetBtn.addEventListener("click", () => {
+    resetGame();
 });
 
 

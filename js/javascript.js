@@ -13,6 +13,8 @@ const computerScorePara = document.querySelector("#comp-score");
 
 const message = document.querySelector("#message");
 
+const resetBtn = document.querySelector("#reset-btn");
+
 
 
 // Function for getting computer input

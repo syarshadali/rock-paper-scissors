@@ -88,6 +88,7 @@ resetBtn.addEventListener("click", () => {
 });
 
 
+
 // Function to display winner and loser of the round
 
 const showWinner = (humanWin, humanChoice, computerChoice) => {
@@ -117,12 +118,15 @@ function checkGameWinner() {
         message.innerText = "OH GOD! YOU LOSE THE GAME";
         message.style.backgroundColor = "#ff00009e";
     } else if (humanScore === computerScore) {
-        message.innerText = "GAME WAS DRAW. PLAY AGAIN!";
+        message.innerText = "GAME WAS DRAW!";
         message.style.backgroundColor = "#af54d9";
     }
 }
 
 
-
+function endGame() {
+    // Reveal the reset option
+    resetBtn.style.display = "block";
+}
 
 

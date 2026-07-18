@@ -114,3 +114,26 @@ img {
     border-radius: 1rem;
     margin-top: 2rem;
 }
+
+
+/* Reset Button Specific Styles */
+
+
+button {
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#reset-btn {
+    background-color: #af54d9;
+    margin-left: 65rem;
+    display: none;
+}
+
+#reset-btn:hover {
+    background-color: #000;
+}

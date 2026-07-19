@@ -131,6 +131,7 @@ button {
 #reset-btn {
     background-color: #af54d9;
     margin-left: 65rem;
+    font-weight: bold;
     display: none;
 }
 

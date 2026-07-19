@@ -132,3 +132,19 @@ function endGame() {
 }
 
 
+function resetGame() {
+    // Reset Scores
+    humanScore = 0;
+    computerScore = 0;
+
+    // Reset UI elements
+    humanScorePara.textContent = "0";
+    computerScorePara.textContent = "0";
+    msg.textContent = "Play your Move";
+    msg.style.backgroundColor = "#af54d9";
+    message.textContent = "Result of the Game";
+    message.style.backgroundColor = "#af54d9";
+
+    // Hide Reset Button
+    resetBtn.style.display = "none";
+}

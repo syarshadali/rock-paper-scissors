@@ -4,11 +4,11 @@ This is the third foundations and the first javascript project of the full stack
 
 <b>INTRODUCTION:</b>
 
-This is the popular rock-paper-scissors game which is designed through javascript language and will be played entirely on browser's console. The UI will be created later.
+This is the popular rock-paper-scissors game which is designed through javascript language. The game will be played through UI by clicking the buttons in the UI.
 
 <b>OBJECTIVE:</b>
 
-The main objective of this rock-paper-scissors game is to demonstrate the use of browser's console which is a built-in development tool which provides the ability to write, manage, debug, monitor and run javascript code on demand.
+The main objective of this rock-paper-scissors game is to demonstrate the use of UI as well as browser's console which is a built-in development tool which provides the ability to write, manage, debug, monitor and run javascript code on demand.
 
 <b>SKILLS DEMONSTRATED:</b>
 

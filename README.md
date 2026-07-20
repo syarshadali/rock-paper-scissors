@@ -27,3 +27,12 @@ The game will be played in the UI by clicking buttons and when the score reaches
     <li>The increment operator(++).</li>
     <li>Using git for version control and navigating files and directories in Linux system through terminal.</li>
 </ol>
+
+<b>THANKS FOR IMAGES:</b>
+
+Thanks for the creators of the images which I used in my site.
+<ul>
+    <li>pexels cottonbro CG Studio.</li>
+    <li>RDNE stock project</li>
+</ul>
+https://www.pexels.com/photo
